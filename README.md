@@ -27,18 +27,17 @@ Table of Contents
 
 General Information
 ---
-The project is part of a graduate course (_Fundamentals of Data Analytics_) at Western Governor's University. The data will not be provided, but rather an explanation of key findings and analysis of the project. The raw data set contains 1,046 observations and 20 features which is later reduced to 6 features. 
+The project is part of a graduate course (_R for Data Analysts_) at Western Governor's University. The data will not be provided, but rather an explanation of key findings and analysis of the project. The raw data set contains 1,046 observations and 20 features which is later reduced to 6 features. 
 
 **To expand the project even further as a business use case, how can the police department increase the chances of their eligibility for funding if not eligible?**
 
 Summary
 ---
-The best fitted linear regression model is y = 1.491x + 21.914 which means that for every additional incident reported (x), you can expect officers on site to increase by an average of 1.491. The overall mean of the data is 1.889 which is below the 2.5 threshold and is not qualified for additional funding. In order to increase their eligibility for funding, the Seattle PD must focus on zones with average officers at scene that is less than or equal to 2 and the largest reported incident zones. There are 12 zones that need assistance and can lead to funding eligibility.
+
 
 Tech Stack
 ---
-* Microsoft Excel
-* Tableau
+* R (tidyr, reshape2, readr)
 
 Data Preprocessing/Cleaning
 ---
