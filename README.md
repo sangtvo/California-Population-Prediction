@@ -58,7 +58,34 @@ df$Year <- as.numeric(df$Year)
 
 Data Analysis
 ---
+![Scatterplot](https://github.com/sangtvo/California-Population-Prediction/blob/main/images/LRmodel.PNG?raw=true)
+The scatterplot shows an upward positive trend and we expect that the population of California should continue to rise over the years. It is not likely for the trend to move downward unless some disastrous or unexpected events to occur such as disease outbreaks and catastrophic weather. Based on the data, it seems that the population grows roughly between 0.001 - 0.002% every year. 
 
+Since the x axis for years is converted to numeric, it is labeled as follows:
+
+Year | Actual Year
+:-------------------------:|:-------------------------:
+0 | 2010
+1 | 2011
+2 | 2012
+3 | 2013
+4 | 2014
+5 | 2015
+6 | 2016
+7 | 2017
+8 | 2018
+9 | 2019
+10 | 2020
+11 | 2021
+12 | 2022
+13 | 2023
+14 | 2024
+15 | 2025
+16 | 2026
+17 | 2027
+18 | 2028
+19 | 2029
+20 | 2030
 
 Modeling
 ---
