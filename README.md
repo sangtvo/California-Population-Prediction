@@ -1,5 +1,5 @@
 # Project 04: California Population Prediction
-> The United States Census Bureau provides annual estimates of the population size of each U.S. state and region that are made publicly available. This analysis aims to predict the size of its population in the state of California up to the year 2025 by creating a linear regression analysis with R.
+> The United States Census Bureau provides annual estimates of the population size of each U.S. state and region that are made publicly available. This analysis aims to predict the size of its population in the state of California up to the year 2030 by creating a linear regression analysis with R.
 
 Table of Contents
 ---
@@ -27,7 +27,7 @@ Table of Contents
 
 General Information
 ---
-The project is part of a graduate course (_R for Data Analysts_) at Western Governor's University. The data will not be provided, but rather an explanation of key findings and analysis of the project. The raw data set contains 1,046 observations and 20 features which is later reduced to 6 features. 
+The project is part of a graduate course (_R for Data Analysts_) at Western Governor's University. The data is from the [US Census Bureau](https://www.census.gov/programs-surveys/popest.html).
 
 **To expand the project even further as a business use case, how can the police department increase the chances of their eligibility for funding if not eligible?**
 
@@ -37,18 +37,14 @@ Summary
 
 Tech Stack
 ---
-* R (tidyr, reshape2, readr)
+* R Studio (tidyr, reshape2, readr, ggplot2)
 
 Data Preprocessing/Cleaning
 ---
-* Irrelevant:
-  * Removed ID and event number columns since the General Offense Number can be used as the unique identifier for each event.
-  * Time stamp is not neccesary for the study.
-* Redundant: 
-  * Event Clearing Subgroup, Event Clearing Description, Initial Type Description/Subgroup/Group are already explained by Event Clearing Group.
-* Missing Data:
-  * Scene Time is not all populated and therefore, removed.
-  * One observation is removed due to missing data in district/sector feature which is important in the analysis. 
+Since the data contains many states, I only need to look at the California observation only which is 6 as a unique identifier. 
+```r
+ca <- raw_data[raw_data$STATE == "6", 8:17]
+```
 
 Data Visualization
 ---
