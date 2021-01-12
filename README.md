@@ -41,19 +41,22 @@ Tech Stack
 
 Data Preprocessing/Cleaning
 ---
-Since the data contains many states, I only need to look at the California observation only which is 6 as a unique identifier. 
+Since the data contains many states, I only need the California observation only which is "6" as a unique identifier in the data frame. In addition, I include only the years provided in the data.
 ```r
 ca <- raw_data[raw_data$STATE == "6", 8:17]
 ```
 
-Data Visualization
----
-![Districts](https://github.com/sangtvo/Seattle-PD-Funding-Eligibility/blob/main/images/Districts.png?raw=true)
-![AvgNumPerEvent](https://github.com/sangtvo/Seattle-PD-Funding-Eligibility/blob/main/images/Average%20Number%20of%20Officers%20Per%20Event.png?raw=true)
-![AvgNumPerZone](https://github.com/sangtvo/Seattle-PD-Funding-Eligibility/blob/main/images/Average%20Number%20of%20Officers%20Per%20Zone.png?raw=true)
-![NumofIncidentsbyDate](https://github.com/sangtvo/Seattle-PD-Funding-Eligibility/blob/main/images/Number%20of%20Incidents%20by%20Date.png?raw=true)
-![NumofIncidentsbyDistrict](https://github.com/sangtvo/Seattle-PD-Funding-Eligibility/blob/main/images/Num%20of%20Incidents%20by%20District.png?raw=true)
-![NumofIncidentsByEventType](https://github.com/sangtvo/Seattle-PD-Funding-Eligibility/blob/main/images/Num%20of%20Incidents%20by%20Event.png?raw=true)
+The data frame is in a wide format with each year as an individual variable. However, I want year as one variable and converted into a narrow format. To do so, a melt function is needed from the reshape2 library.
+
+```r
+df <- melt(ca, variable.name = "Year", value.name = "Population")
+str(df)
+```
+
+Converting the factor variable "Year" as numeric so that it is usable in a linear regression model.
+```r
+df$Year <- as.numeric(df$Year)
+```
 
 Data Analysis
 ---
