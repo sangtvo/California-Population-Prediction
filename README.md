@@ -25,7 +25,7 @@ The project is part of a graduate course (_R for Data Analysts_) at Western Gove
 
 Summary
 ---
-The california population grows roughly between 0.0010-0.002% per year and the equation to the linear regression model is Population = 37,198,671 + 258,094(year) based on the data set. By 2030, it is expected to have 42,618,653 reported citizens in the state of California.
+The California population grows roughly between 0.0010-0.002% per year and the equation to the linear regression model is Population = 37,198,671 + 258,094(year) based on the data set. By 2030, it is expected to have 42,618,653 reported citizens in the state of California.
 
 Tech Stack
 ---
@@ -116,8 +116,6 @@ p_year <- data.frame(Year=c(11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21))
 predict(m1, newdata = p_year)
 ```
 
-To see the full notebook, check out CA_Population Prediction.rMD.
-
 Solution
 ---
 Based on the data, the predictions for California population are as follows:
@@ -137,3 +135,5 @@ Year | Actual Year | Population Size
 21 | 2030 | 42,618,653 
 
 By 2030, the predicted population for the state of California is **42,618,653** reported citizens. However, there is a flaw in the data set because there may be citizens who have not reported their status living in the state. Some reasons can include that the citizens did not receive the reminder mail, forgot to file, or choose not to despite the fine. Additionally, the data can be slightly more accurate if more years were provided by the US Census Bureau since the prediction is based on the last 10 years. 
+
+To see the full R notebook, check out CA_Population Prediction.rMD in the "Code" folder.
