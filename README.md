@@ -10,19 +10,14 @@ Table of Contents
 6. [Data Analysis](#data-analysis)
 7. [Modeling](#modeling)
 8. [Solution](#solution)
-9. [Key Takeaways](#key-takeaways)
-10. [References](#references)
 
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#general-information"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#summary"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#tech-stack"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#data-preprocessingcleaning"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#data-visualization"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#data-analysis"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#modeling"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#solution"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#key-takeaways"/>
-<a name="https://github.com/sangtvo/Seattle-PD-Funding-Eligibility#references"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#general-information"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#summary"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#tech-stack"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#data-preprocessingcleaning"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#data-analysis"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#modeling"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#solution"/>
 
 General Information
 ---
@@ -30,7 +25,7 @@ The project is part of a graduate course (_R for Data Analysts_) at Western Gove
 
 Summary
 ---
-The equation to the linear regression model is Population = 37,198,671 + 258,094(year) based on the data set. By 2030, it is expected to have 42,618,653 reported citizens in the state of California.
+The california population grows roughly between 0.0010-0.002% per year and the equation to the linear regression model is Population = 37,198,671 + 258,094(year) based on the data set. By 2030, it is expected to have 42,618,653 reported citizens in the state of California.
 
 Tech Stack
 ---
