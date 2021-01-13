@@ -7,7 +7,6 @@ Table of Contents
 2. [Summary](#summary)
 3. [Tech Stack](#tech-stack)
 4. [Data Preprocessing/Cleaning](#data-preprocessingcleaning)
-5. [Data Visualization](#data-visualization)
 6. [Data Analysis](#data-analysis)
 7. [Modeling](#modeling)
 8. [Solution](#solution)
@@ -31,7 +30,7 @@ The project is part of a graduate course (_R for Data Analysts_) at Western Gove
 
 Summary
 ---
-
+The equation to the linear regression model is Population = 37,198,671 + 258,094(year) based on the data set. By 2030, it is expected to have 42,618,653 reported citizens in the state of California.
 
 Tech Stack
 ---
@@ -60,7 +59,7 @@ Data Analysis
 ---
 ![Scatterplot](https://github.com/sangtvo/California-Population-Prediction/blob/main/images/LRmodel.PNG?raw=true)
 
-The scatterplot shows an upward positive trend and we expect that the population of California should continue to rise over the years. It is not likely for the trend to move downward unless some disastrous or unexpected events to occur such as disease outbreaks and catastrophic weather. Based on the data, it seems that the population grows roughly between 0.001 - 0.002% every year. 
+The scatterplot shows an upward positive trend and we expect that the population of California should continue to rise over the years. It is not likely for the trend to move downward unless some disastrous/unexpected events occur such as disease outbreaks or catastrophic weather. Based on the data, it seems that the population grows roughly between 0.001 - 0.002% every year. 
 
 Since the x axis for years is converted to numeric, it is labeled as follows:
 
@@ -90,7 +89,7 @@ Year | Actual Year
 
 Modeling
 ---
-Creating a linear regression model with the data frame.
+Creating a linear regression model with the data frame. The linear equation is Population = 37,198,671 + 258,094(year). This means that a unit change in Year will increase by 258,094 for the California population.
 ```r
 m1 <- lm(Population ~ Year, data=df)
 summary(m1)
@@ -116,3 +115,30 @@ Multiple R-squared:  0.9688,	Adjusted R-squared:  0.9648
 F-statistic:   248 on 1 and 8 DF,  p-value: 0.000000264
 ```
 
+Predicting the population size for the next 10 years based on our linear regression model.
+```r
+p_year <- data.frame(Year=c(11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21))
+predict(m1, newdata = p_year)
+```
+
+To see the full notebook, check out CA_Population Prediction.rMD.
+
+Solution
+---
+Based on the data, the predictions for California population are as follows:
+
+Year | Actual Year | Population Size
+:-------------------------:|:-------------------------:|:-------------------------:
+11 | 2020 | 40,037,709
+12 | 2021 | 40,295,803
+13 | 2022 | 40,553,898
+14 | 2023 | 40,811,992 
+15 | 2024 | 41,070,086 
+16 | 2025 | 41,328,181 
+17 | 2026 | 41,586,275 
+18 | 2027 | 41,844,370 
+19 | 2028 | 42,102,464 
+20 | 2029 | 42,360,558 
+21 | 2030 | 42,618,653 
+
+By 2030, the predicted population for the state of California is **42,618,653** reported citizens. However, there is a flaw in the data set because there may be citizens who have not reported their status living in the state. Some reasons can include that the citizens did not receive the reminder mail, forgot to file, or choose not to despite the fine. Additionally, the data can be slightly more accurate if more years were provided by the US Census Bureau since the prediction is based on the last 10 years. 
