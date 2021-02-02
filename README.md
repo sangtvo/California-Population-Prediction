@@ -29,7 +29,11 @@ The California population grows roughly between 0.0010-0.002% per year and the e
 
 Tech Stack
 ---
-* R Studio (tidyr, reshape2, readr, ggplot2)
+* R Studio
+    * tidyr
+    * reshape2
+    * readr
+    * ggplot2
 
 Data Preprocessing/Cleaning
 ---
@@ -82,7 +86,7 @@ Year | Actual Year
 20 | 2029
 21 | 2030
 
-Modeling
+Linear Regression
 ---
 Creating a linear regression model with the data frame. The linear equation is Population = 37,198,671 + 258,094(year). This means that a unit change in Year will increase by 258,094 for the California population.
 ```r
@@ -136,4 +140,4 @@ Year | Actual Year | Population Size
 
 By 2030, the predicted population for the state of California is **42,618,653** reported citizens. However, there is a flaw in the data set because there may be citizens who have not reported their status living in the state. Some reasons can include that the citizens did not receive the reminder mail, forgot to file, or choose not to despite the fine. Additionally, the data can be slightly more accurate if more years were provided by the US Census Bureau since the prediction is based on the last 10 years. 
 
-To see the full R notebook, check out CA_Population Prediction.rMD in the "Code" folder.
+To see the full R notebook, check out [CA_Population Prediction.rMD](https://github.com/sangtvo/California-Population-Prediction/blob/main/Code/CA_Population%20Prediction.Rmd).
