@@ -8,7 +8,7 @@ Table of Contents
 3. [Tech Stack](#tech-stack)
 4. [Data Preprocessing/Cleaning](#data-preprocessingcleaning)
 6. [Data Analysis](#data-analysis)
-7. [Modeling](#modeling)
+7. [Linear Regression](#linear-regression)
 8. [Solution](#solution)
 
 <a name="https://github.com/sangtvo/California-Population-Prediction#general-information"/>
@@ -16,7 +16,7 @@ Table of Contents
 <a name="https://github.com/sangtvo/California-Population-Prediction#tech-stack"/>
 <a name="https://github.com/sangtvo/California-Population-Prediction#data-preprocessingcleaning"/>
 <a name="https://github.com/sangtvo/California-Population-Prediction#data-analysis"/>
-<a name="https://github.com/sangtvo/California-Population-Prediction#modeling"/>
+<a name="https://github.com/sangtvo/California-Population-Prediction#linear-regression"/>
 <a name="https://github.com/sangtvo/California-Population-Prediction#solution"/>
 
 General Information
