@@ -21,7 +21,7 @@ Table of Contents
 
 General Information
 ---
-The project is part of a graduate course (_R for Data Analysts_) at Western Governor's University. The data is from the [US Census Bureau](https://www.census.gov/programs-surveys/popest.html).
+The data is from the [US Census Bureau](https://www.census.gov/programs-surveys/popest.html).
 
 Summary
 ---
