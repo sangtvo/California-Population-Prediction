@@ -1,4 +1,4 @@
-# Project 04: California Population Prediction
+# California Population Prediction
 > The United States Census Bureau provides annual estimates of the population size of each U.S. state and region that are made publicly available. This analysis aims to predict the size of its population in the state of California up to the year 2030 by creating a linear regression analysis with R.
 
 Table of Contents
